@@ -9,4 +9,4 @@ ENV JAVA_OPTS=""
 
 ENTRYPOINT [ "sh", "-c", "java $JAVA_OPTS -jar /app.jar" ]
 
-#CMD ["java -jar /usr/local/MyProjects-1.0-SNAPSHOT.jar"]
+#CMD ["java -jar /app.jar"]
