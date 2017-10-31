@@ -8,6 +8,29 @@
     <artifactId>MyProjects</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <build>
+
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>TestSpringBootMain</mainClass>
+                            <addClasspath>true</addClasspath>
+                        </manifest>
+                    </archive>
+
+
+                </configuration>
+            </plugin>
+
+        </plugins>
+
+    </build>
+
+
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
