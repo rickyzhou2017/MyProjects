@@ -17,22 +17,22 @@ public class TestSpringBootMain {
 
     public static void main(String[] args){
 
-        Runnable thread = new Runnable() {
-            @Override
-            public void run() {
-                while (true) {
-                    System.out.print(".");
+//        Runnable thread = new Runnable() {
+//            @Override
+//            public void run() {
+//                while (true) {
+//                    System.out.print(".");
+//
+//                    try {
+//                        Thread.sleep(1000);
+//                    } catch (InterruptedException e) {
+//                        e.printStackTrace();
+//                    }
+//                }
+//            }
+//        };
 
-                    try {
-                        Thread.sleep(1000);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-                }
-            }
-        };
-
-        new Thread(thread).start();
+//        new Thread(thread).start();
 
 
         SpringApplication.run(TestSpringBootMain.class, args);
